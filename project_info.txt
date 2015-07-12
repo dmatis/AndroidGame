@@ -1,0 +1,1 @@
+This was a game that I developed while learning about Android development and the SDK. Over time, I may modify the assets and update level designs.
