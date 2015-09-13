@@ -60,6 +60,7 @@ public class DashGame extends AndroidGame {
     public void onResume() {
         super.onResume();
 
+        Assets.resumeSound(this);
         Assets.theme.play();
 
     }

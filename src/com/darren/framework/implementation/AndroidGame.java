@@ -62,6 +62,7 @@ public abstract class AndroidGame extends Activity implements Game {
         wakeLock.acquire();
         screen.resume();
         renderView.resume();
+        audio.createSound("Sounds/click.wav");
     }
 
     @Override

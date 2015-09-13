@@ -63,8 +63,6 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
             mediaPlayer.pause();
     }
 
-
-
     @Override
     public void play() {
         if (this.mediaPlayer.isPlaying())
@@ -100,7 +98,8 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
 
             synchronized (this) {
                 isPrepared = false;
-            }}
+            }
+        }
     }
 
     @Override
@@ -116,26 +115,21 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
 
     }
 
-
     @Override
     public void onPrepared(MediaPlayer player) {
         // TODO Auto-generated method stub
         synchronized (this) {
             isPrepared = true;
         }
-
     }
 
     @Override
     public void onSeekComplete(MediaPlayer player) {
         // TODO Auto-generated method stub
-
     }
 
     @Override
     public void onVideoSizeChanged(MediaPlayer player, int width, int height) {
         // TODO Auto-generated method stub
-
     }
-
 }

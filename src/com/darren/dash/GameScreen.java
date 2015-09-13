@@ -205,12 +205,11 @@ public class GameScreen extends Screen {
                 if (inBounds(event, 0, 415, 65, 65)) {
                     currentSprite = anim.getImage();
                     robot.setDucked(false);
-
                 }
 
                 if (inBounds(event, 0, 0, 35, 35)) {
-                    pause();
 
+                    pause();
                 }
 
                 if (event.x > 400) {
@@ -300,7 +299,6 @@ public class GameScreen extends Screen {
                 }
             }
         }
-
     }
 
     private void updateTiles() {
@@ -309,7 +307,6 @@ public class GameScreen extends Screen {
             Tile t = (Tile) tilearray.get(i);
             t.update();
         }
-
     }
 
     @Override
@@ -334,10 +331,6 @@ public class GameScreen extends Screen {
         g.drawImage(hanim.getImage(), hb2.getCenterX() - 48,
                 hb2.getCenterY() - 48);
 
-        // Example:
-        // g.drawImage(Assets.background, 0, 0);
-        // g.drawImage(Assets.character, characterX, characterY);
-
         // Secondly, draw the UI above the game elements.
         if (state == GameState.Ready)
             drawReadyUI();
@@ -347,7 +340,6 @@ public class GameScreen extends Screen {
             drawPausedUI();
         if (state == GameState.GameOver)
             drawGameOverUI();
-
     }
 
     private void paintTiles(Graphics g) {

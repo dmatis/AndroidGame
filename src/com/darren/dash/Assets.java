@@ -13,11 +13,17 @@ public class Assets {
     public static Music theme;
 
     public static void load(DashGame dashGame) {
-        // TODO Auto-generated method stub
-        theme = dashGame.getAudio().createMusic("menutheme.mp3");
+        theme = dashGame.getAudio().createMusic("menutheme2.mp3");
         theme.setLooping(true);
         theme.setVolume(0.85f);
         theme.play();
     }
+
+    public static void resumeSound(DashGame dashGame) {
+        click = dashGame.getAudio().createSound("Sounds/click.wav");
+        click.play(0.8f);
+    }
+
+
 
 }

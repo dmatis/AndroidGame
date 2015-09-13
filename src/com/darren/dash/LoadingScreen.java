@@ -22,14 +22,11 @@ public class LoadingScreen extends Screen {
         Assets.characterJump = g.newImage("jumped.png", ImageFormat.ARGB4444);
         Assets.characterDown = g.newImage("down.png", ImageFormat.ARGB4444);
 
-
         Assets.heliboy = g.newImage("heliboy.png", ImageFormat.ARGB4444);
         Assets.heliboy2 = g.newImage("heliboy2.png", ImageFormat.ARGB4444);
         Assets.heliboy3  = g.newImage("heliboy3.png", ImageFormat.ARGB4444);
         Assets.heliboy4  = g.newImage("heliboy4.png", ImageFormat.ARGB4444);
         Assets.heliboy5  = g.newImage("heliboy5.png", ImageFormat.ARGB4444);
-
-
 
         Assets.tiledirt = g.newImage("tiledirt.png", ImageFormat.RGB565);
         Assets.tilegrassTop = g.newImage("tilegrasstop.png", ImageFormat.RGB565);
@@ -39,8 +36,8 @@ public class LoadingScreen extends Screen {
 
         Assets.button = g.newImage("button.jpg", ImageFormat.RGB565);
 
-        //This is how you would load a sound if you had one.
-        //Assets.click = game.getAudio().createSound("explode.ogg");
+        //Loading sounds here
+        Assets.click = game.getAudio().createSound("Sounds/click.wav");
 
 
         game.setScreen(new MainMenuScreen(game));
